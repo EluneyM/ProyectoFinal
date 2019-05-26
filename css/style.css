@@ -1,0 +1,48 @@
+body{
+    background-color: lavender;
+}
+.row{
+    margin: 10px;
+}
+#demo{
+    height: 300px;
+}
+#twitter{
+    height:300px;
+    width: 90%;
+}
+
+.carousel-item{
+    height: 300px;
+}
+.carousel-item h3{
+    color: lightgreen;
+    -webkit-text-stroke: 1px black;
+}
+img#publicacion{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+img#publicacion p{
+    width: 50px;
+}
+
+div#buscar{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#nav-login{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+#img-login{
+    float: left;
+        height: 35px;
+}
+
+#logo{
+    height: 60px;
+}
