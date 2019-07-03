@@ -1,9 +1,10 @@
 <?php 
+session_start();
 require_once '../layout/header.php';
 ?>
 <div class="row">
     <div class="col-md-3">
-        <img src="" alt="Imagen">
+        <img src="<?= $configuracion['urlBase'] ?>/imagenes/empresa/empresa.jpg" alt="Imagen">
     </div>
     <div class="col-md-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, 
