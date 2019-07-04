@@ -2,31 +2,29 @@
 session_start();
 require_once '../layout/header.php';
 ?>
-<div id="form-contacto">
-    <form action="/action_page.php" class="was-validated">
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre" name="nombre" required>
+<form id="mail_to" action="" method="">
+    <div class="imgcontainer">
+        <img height="100px" src="../imagenes/Decoracion/contacto.png" alt="MailTo" class="mail">
+    </div>
+    <div class="text-center">
+        <h4>Enviar mensaje</h4>
+    </div>
+    <div class="container">
+        <label for="nombre"><b>Nombre:</b></label>
+        <input class="form-control" type="text" placeholder="Ingrese Nombre" name="nombre" id="nombre" required>
+        <label for="apellido"><b>Apellido:</b></label>
+        <input class="form-control" type="text" placeholder="Igrese Apellido" name="apellido" id="apellido" required>
+        <label for="correo"><b>Correo:</b></label>
+        <input class="form-control" type="text" placeholder="Ingrese correo electrónico" name="correo" id="correo" required>
+        <label for="descripcion">Descripción:</label>
+        <textarea class="form-control" name="descripcion" id="" cols="30" rows="10" required></textarea>
+        <div class="botones">
+            <button name="loginbtn" class="acepbtn" type="submit">Enviar</button>
         </div>
-        <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingrese Apellido" name="apellido" required>
-        </div>
-        <div class="form-group">
-            <label for="correo">Correo:</label>
-            <input type="mail" class="form-control" id="correo" placeholder="Ingrese Correo" name="correo" required>
-        </div>
-        <div class="form-group">
-            <label for="descripcion">Descripción:</label>
-            <textarea name="descripcion" id="" cols="30" rows="10" required=""></textarea>
-        </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember" required> Acepto los terminos.
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-</div>
+        <label>
+            <input type="checkbox" checked="checked" name="acep_terminos"> Acepto los terminos
+        </label>
+    </div>
+</form>
 </div>
 <?php require_once '../layout/footer.php'; ?>

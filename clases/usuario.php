@@ -27,7 +27,6 @@ class usuario {
         $pst->bindValue(':usuario', $usuario, PDO::PARAM_STR);
         $pst->execute();
         $resultado = $pst->fetch();
-        var_dump($resultado);
         if($resultado['administrador']==='1'){
             return true;
         }

@@ -15,8 +15,8 @@ if (isset($_POST['loginbtn']) && $usuario->esLoginValido($_POST['username'], $_P
     else{
         $_SESSION['admin'] = false;
     }
-    //header('Location: index.php');
-    //exit();
+    header('Location: index.php');
+    exit();
 } else {
     if (isset($_POST['loginbtn'])) {
         $_SESSION['mensaje'] = 'Login invalido';

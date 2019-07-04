@@ -35,7 +35,8 @@
                 <?php if (isset($_SESSION['username'])) { ?>
                     <a href="login.php" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" ><?= $_SESSION['username'] ?? 'Login' ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="agregar_articulo.php">Agregar articulo</a>
+                        <a class="dropdown-item" href="menu_usuario.php">Menu</a>
+                        <a class="dropdown-item" href="agregar_articulo.php"><?= $_SESSION['admin']===true ? 'Agregar articulo' : ""; ?></a>
                         <a class="dropdown-item" href="logout.php">Salir</a>
                     </div>
                     <?php
@@ -44,8 +45,8 @@
                     <a href="login.php" class="nav-link"><?= $_SESSION['username'] ?? 'Entrar' ?></a>
                 <?php }
                 ?>
-                </a>
-                <img src="" alt="Carrito">
+                    <img src="../imagenes/Iconos/carrito.png" height="30px" alt="Carrito">
+                <a href="mostrar_carrito.php">Ver(<?= empty($_SESSION['carrito'])? 0 : count($_SESSION['carrito']); ?>)</a>
             </div>
         </nav>
     </div>

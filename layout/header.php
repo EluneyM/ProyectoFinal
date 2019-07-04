@@ -8,7 +8,7 @@ $configuracion = require '../helpers/configuracion.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bootstrap 4, from LayoutIt!</title>
+        <title>Electronica Ground</title>
 
         <meta name="description" content="Source code generated using layoutit.com">
         <meta name="author" content="LayoutIt!">
